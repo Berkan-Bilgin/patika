@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <div class="text">
+        Merhaba,<strong id="myName">Berkan!</strong> Hoşgeldin! 
+        <strong><div id="myClock" >00:00:00</div> </strong>
+        tarihinde <strong>Kodluyoruz Frontend Web Development Patikası'nın</strong> <br> Javascript bölümü 1. Ödevindesiniz.
+
+    </div>
+    
+    
+    
+   <div class="clock">
+        <div class="numbers">
+            <div class="twelve">12</div>
+            <div class="three">3</div>
+            <div class="six">6</div>
+            <div class="nine">9</div>
+        </div>
+        <div class="arrows">
+            <div class="hour"></div>
+            <div class="minute"></div>
+            <div class="second"></div>
+       </div>
+       <img src="data:image/png;base64,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" alt="casio_logo" srcset="">
+   </div>
+    <script src="index.js"></script>
+</body>
+</html>

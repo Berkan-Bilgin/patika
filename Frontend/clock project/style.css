@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50px;
+    z-index: 2;                       /*Katman*/
+    
+}
+
+.clock{
+    top: 20px;
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 35%;
+    border: 5px solid black;
+    box-shadow: 1px 1px 10px 
+}
+
+.numbers div{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    
+    text-shadow: 2px 2px 2px darkgray;
+}
+
+.twelve{
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.three{
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nine{
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.six{
+    bottom: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.arrows{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    z-index: 4;
+}
+
+.arrows div {
+    background-color: orange;
+    width: 7px;
+    position: absolute;
+    height: 140px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+}
+
+.arrows .hour{
+    height: 80px;
+    transform:rotate(30deg);
+    background-color: black;
+}
+.arrows .minute{
+    height: 120px;
+    transform:rotate(60deg);
+    background-color: black;
+}
+.arrows .second{
+    height: 120px;
+    width: 3px;
+    transform:rotate(90deg);
+    background-color: green ;
+}
+
+#Baslik{
+    color: green;
+    position: absolute;
+    top: 10px;
+    
+}
+
+#stop{
+    background-color: lime;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+.text{
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    color: green;
+    font-size: 25px;
+}
+#myClock{
+    font-size: 45px;
+}
+
+
+
+
