@@ -1,12 +1,14 @@
 import React from 'react'
 import getData from './getData'
 
+
+
 const app = () => {
-    getData(5)
+    getData(3)
 
     
   return (
-    <div>app</div>
+    <h1>FMSS Bilişim React Ödev 1</h1>
   )
 }
 

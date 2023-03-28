@@ -1,15 +1,21 @@
 import axios from 'axios';
 
 
-    const getData = async  (id) => {
-        const {data:userData} = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
-        console.log(userData)
-    
-        const {data:postData} = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        console.log(postData)
-        
-    
-    };
+const getData = async (id) => {
+    //Getting first request
+    const { data: userData } = await axios(
+        `https://jsonplaceholder.typicode.com/users/${id}`
+    );
+    //Getting second request
+    const { data: postData } = await axios(
+        `https://jsonplaceholder.typicode.com/posts?userId=${id}`
+    );
+
+    console.log(userData)
+    console.log("posts:", postData)
+
+
+};
 
 
 
